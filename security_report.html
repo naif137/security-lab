@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Security Lab Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f6f9; color: #333; margin: 0; padding: 20px; }
+        .container { max-width: 900px; margin: auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        .timestamp { color: #7f8c8d; font-size: 0.9em; margin-bottom: 20px; }
+        .section { margin-top: 25px; }
+        h2 { color: #3498db; font-size: 1.2em; }
+        pre { background: #2c3e50; color: #ecf0f1; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🛡️ Security Lab - Automated Report</h1>
+        <div class="timestamp">Generated on: 2026-09-07 20:51:55</div>
+        
+        <div class="section">
+            <h2>1. Logged-in Users & System Status</h2>
+            <pre> 20:51:55 up  1:23,  1 user,  load average: 0.00, 0.00, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU  WHAT
+naif137  pts/1    -                19:29    1:22m  0.04s  0.04s -bash
+</pre>
+        </div>
+
+        <div class="section">
+            <h2>2. Active Network Ports & Connections</h2>
+            <pre>Netid State  Recv-Q Send-Q  Local Address:Port Peer Address:Port
+udp   UNCONN 0      0          127.0.0.54:53        0.0.0.0:*   
+udp   UNCONN 0      0       127.0.0.53%lo:53        0.0.0.0:*   
+udp   UNCONN 0      0      10.255.255.254:53        0.0.0.0:*   
+udp   UNCONN 0      0           127.0.0.1:323       0.0.0.0:*   
+udp   UNCONN 0      0           127.0.0.1:323       0.0.0.0:*   
+udp   UNCONN 0      0               [::1]:323          [::]:*   
+udp   UNCONN 0      0               [::1]:323          [::]:*   
+tcp   LISTEN 0      4096       127.0.0.54:53        0.0.0.0:*   
+tcp   LISTEN 0      1000   10.255.255.254:53        0.0.0.0:*   
+tcp   LISTEN 0      4096    127.0.0.53%lo:53        0.0.0.0:*   
+</pre>
+        </div>
+    </div>
+</body>
+</html>
